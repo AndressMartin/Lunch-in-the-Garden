@@ -46,14 +46,7 @@ public class CameraMovements : MonoBehaviour
 
     public void SetZoomOut()
     {
-        if (paningOnNewItem)
-        {
-            time = tweenTimeForNewItems;
-        }
-        else
-        {
-            time = tweenTime;
-        }
+        time = tweenTime;
         cam.transform.DOMove(originalPos, time).SetEase(Ease.InOutSine).OnComplete(() => { ToggleCanClick(); SetDiscovered(); });
         cam.DOOrthoSize(5, time);
     }
