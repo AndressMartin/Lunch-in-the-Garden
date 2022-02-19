@@ -28,9 +28,11 @@ public class ClickManager : Singleton<ClickManager>
     public void DoesCollideWithInteractable()
     {
         if (!Clicked()) return;
-        RaycastHit2D hit = Physics2D.Raycast(GetMousePosition(), Vector2.zero, 100, layer);
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100, layer);
+        //Debug.Log($"Hit {hit}, {hit.collider}, {hit.collider.gameObject.layer}");
         if (hit.collider)
         {
+            Debug.Log("Clicked" + hit.collider.gameObject);
             ClickedInteractable.Raise(hit.collider.gameObject);
         }
     }
