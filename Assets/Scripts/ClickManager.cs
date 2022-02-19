@@ -8,7 +8,13 @@ public class ClickManager : Singleton<ClickManager>
     private GameEvent ClickedInteractable;
     [SerializeField]
     private LayerMask layer;
+    [SerializeField]
+    private bool canClickInteractable;
 
+    private void Start()
+    {
+        canClickInteractable = true;
+    }
     private void Update()
     {
         DoesCollideWithInteractable();
@@ -28,12 +34,18 @@ public class ClickManager : Singleton<ClickManager>
     public void DoesCollideWithInteractable()
     {
         if (!Clicked()) return;
+        if (!canClickInteractable) return;
+
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100, layer);
-        //Debug.Log($"Hit {hit}, {hit.collider}, {hit.collider.gameObject.layer}");
         if (hit.collider)
         {
             Debug.Log("Clicked" + hit.collider.gameObject);
             ClickedInteractable.Raise(hit.collider.gameObject);
         }
+    }
+
+    public void ToggleCanClick()
+    {
+        canClickInteractable = !canClickInteractable;
     }
 }

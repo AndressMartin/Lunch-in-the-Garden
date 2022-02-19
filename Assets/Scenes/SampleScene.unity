@@ -432,6 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476829785}
   - component: {fileID: 1476829786}
+  - component: {fileID: 1476829787}
   m_Layer: 6
   m_Name: '[Clicker]'
   m_TagString: Untagged
@@ -469,6 +470,38 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 64
+  canClickInteractable: 0
+--- !u!114 &1476829787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476829784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07c1dca1a3b65e4c978ffb4c2268b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d695c831316e03e488cf2cac05129e42, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1476829786}
+        m_TargetAssemblyTypeName: ClickManager, Assembly-CSharp
+        m_MethodName: ToggleCanClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ResponseWithObject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1626318258
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +547,7 @@ GameObject:
   - component: {fileID: 2031871741}
   - component: {fileID: 2031871745}
   - component: {fileID: 2031871746}
+  - component: {fileID: 2031871744}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -586,6 +620,37 @@ Transform:
   m_Father: {fileID: 892596665}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031871744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031871740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07c1dca1a3b65e4c978ffb4c2268b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 2ac5ac170e379784590723b318cc5298, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2031871745}
+        m_TargetAssemblyTypeName: CameraMovements, Assembly-CSharp
+        m_MethodName: SetZoomOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ResponseWithObject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2031871745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,9 +664,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetedCamSize: 3
-  zoomActive: 0
   paningOnNewItem: 0
   tweenTime: 1
+  tweenTimeForNewItems: 3
+  doneCameraTween: {fileID: 11400000, guid: a57adf6565720aa45a2a41e376fcc108, type: 2}
+  canClick: {fileID: 11400000, guid: d695c831316e03e488cf2cac05129e42, type: 2}
+  focusedObj: {fileID: 0}
 --- !u!114 &2031871746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,7 +691,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2031871745}
         m_TargetAssemblyTypeName: CameraMovements, Assembly-CSharp
-        m_MethodName: ZoomIn
+        m_MethodName: SetZoomIn
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -773,6 +841,14 @@ PrefabInstance:
     - target: {fileID: 702762954408213334, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085809003648538233, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085809003648538233, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3405345004619293251, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
       propertyPath: m_Pivot.x

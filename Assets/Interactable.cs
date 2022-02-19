@@ -5,5 +5,5 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public InteractableSO content;
-    public bool discovered;
+    public bool undiscovered = true;
 }
