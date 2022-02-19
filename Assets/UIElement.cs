@@ -8,8 +8,10 @@ public class UIElement : MonoBehaviour
 {
     public Image image;
     public TextMeshProUGUI description;
-    public GameObject ingredientsGridLayout;
-    public List<UIElement> ingredients;
+
+    public GameObject ingredientsGridLayout; //For recipes
+    public List<UIElement> ingredients; //For recipes
+    public Interactable relatedInteractable; //For ingredients
 
     public void Init(Sprite image, string description, List<UIElement> ingredients)
     {

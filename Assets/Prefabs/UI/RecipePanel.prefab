@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 3520267072318017550}
   - component: {fileID: 4343755549643986545}
   - component: {fileID: 4921876954775717392}
+  - component: {fileID: -4080985475700660599}
   m_Layer: 5
   m_Name: RecipePanel
   m_TagString: Untagged
@@ -229,6 +230,19 @@ MonoBehaviour:
   description: {fileID: 1277633324507413293}
   ingredientsGridLayout: {fileID: 7598198979310458473}
   ingredients: []
+  relatedInteractable: {fileID: 0}
+--- !u!114 &-4080985475700660599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426119120112237536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad57245a3b1e224e9f1e7a0263fe8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5754802018705796457
 GameObject:
   m_ObjectHideFlags: 0

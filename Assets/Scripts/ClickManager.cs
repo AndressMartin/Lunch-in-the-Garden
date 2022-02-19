@@ -13,7 +13,7 @@ public class ClickManager : Singleton<ClickManager>
 
     private void Start()
     {
-        canClickInteractable = true;
+        canClickInteractable = false;
     }
     private void Update()
     {

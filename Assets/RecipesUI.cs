@@ -15,12 +15,15 @@ public class RecipesUI : MonoBehaviour
     [SerializeField]
     private GameObject recipesVerticalLayout;
 
+
     // Start is called before the first frame update
     void Start()
     {
         recipesManager = RecipesManager.GetInstance();
         SetupUI();
+        
     }
+
 
     private void SetupUI()
     {
