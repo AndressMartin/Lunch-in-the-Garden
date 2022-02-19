@@ -850,6 +850,30 @@ PrefabInstance:
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3405345004117668129, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405345004117668129, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405345004117668129, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405345004117668129, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405345004117668129, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 148.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405345004117668129, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -38
+      objectReference: {fileID: 0}
     - target: {fileID: 3405345004619293251, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
       propertyPath: m_Pivot.x
       value: 0

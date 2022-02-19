@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91ca246209901d94197e2b2c265778fe, type: 3}
-  m_Name: New Recipe SO
+  m_Name: StrawberryCherryPie
   m_EditorClassIdentifier: 
-  name: Cake of Awesome
+  name: Strawberry Cherry Pie
   description: Simply great.
   art: {fileID: 21300000, guid: fd098fb4cf57bad419701c802e442b7e, type: 3}
   ingredients:
