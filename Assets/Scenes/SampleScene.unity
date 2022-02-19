@@ -600,7 +600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetedCamSize: 3
   zoomActive: 0
-  speed: 0.024
+  paningOnNewItem: 0
+  tweenTime: 1
 --- !u!114 &2031871746
 MonoBehaviour:
   m_ObjectHideFlags: 0
