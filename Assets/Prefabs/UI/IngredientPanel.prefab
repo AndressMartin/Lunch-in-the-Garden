@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.6951, y: 7.6948}
-  m_SizeDelta: {x: 34.6103, y: 34.6104}
+  m_AnchoredPosition: {x: -29.75, y: 9.8652}
+  m_SizeDelta: {x: 40.5, y: 38.9512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6418872168863035406
 CanvasRenderer:
@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6526269085493268833}
   - component: {fileID: 8979586489739739151}
+  - component: {fileID: 401657753154659097}
   m_Layer: 5
   m_Name: IngredientPanel
   m_TagString: Untagged
@@ -128,6 +129,15 @@ MonoBehaviour:
   image: {fileID: 8698490271922575187}
   description: {fileID: 6232389144919328224}
   ingredientsGridLayout: {fileID: 0}
+  ingredients: []
+--- !u!222 &401657753154659097
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550871747486259386}
+  m_CullTransparentMesh: 1
 --- !u!1 &8321125538424694790
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,8 +172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.25, y: 3.3875}
-  m_SizeDelta: {x: 59.5, y: 43.225}
+  m_AnchoredPosition: {x: 30.2281, y: 8.6422}
+  m_SizeDelta: {x: 74.3499, y: 25.405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &830312768269952270
 CanvasRenderer:
@@ -195,15 +205,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f7074758fdd3bcf40bddad5e77c403fc, type: 2}
+  m_sharedMaterial: {fileID: -4927342184280942480, guid: f7074758fdd3bcf40bddad5e77c403fc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282664004
+  m_fontColor: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -220,7 +230,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 17.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
