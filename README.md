@@ -1,2 +1,2 @@
-# Lunch-in-the-Garden
+# Lunch in the Garden
  
