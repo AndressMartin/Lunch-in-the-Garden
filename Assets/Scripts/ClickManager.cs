@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class ClickManager : Singleton<ClickManager>
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private GameEvent ClickedInteractable;
+    [SerializeField]
+    private LayerMask layer;
+
+    private void Update()
     {
-        
+        DoesCollideWithInteractable();
     }
 
-    // Update is called once per frame
-    void Update()
+    public bool Clicked()
     {
-        
+        if (!Input.GetMouseButtonDown(0)) return false;
+        return true;
+    }
+
+    public Vector3 GetMousePosition()
+    {
+        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    public void DoesCollideWithInteractable()
+    {
+        if (!Clicked()) return;
+        RaycastHit2D hit = Physics2D.Raycast(GetMousePosition(), Vector2.zero, 100, layer);
+        if (hit.collider)
+        {
+            ClickedInteractable.Raise(hit.collider.gameObject);
+        }
     }
 }
