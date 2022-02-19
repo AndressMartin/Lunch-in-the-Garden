@@ -9,7 +9,7 @@ public class ParticlesManager : MonoBehaviour
     private GameObject instantiatedSparkles;
     public void PlayParticles(GameObject obj)
     {
-        if (obj.GetComponent<Interactable>().undiscovered)
+        if (obj.GetComponent<Interactable>().Undiscovered)
             instantiatedSparkles = Instantiate(sparklesPrefab, obj.transform.position, Quaternion.identity);
     }
 

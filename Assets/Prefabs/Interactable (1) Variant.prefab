@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 41240840313177907, guid: e42579f10244b3e4e8f725e8012d1406, type: 3}
       propertyPath: m_Name
-      value: Interactable (1) Variant
+      value: Baby Kale
       objectReference: {fileID: 0}
     - target: {fileID: 985665959207664300, guid: e42579f10244b3e4e8f725e8012d1406, type: 3}
       propertyPath: content
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 8818513342629869904, guid: e42579f10244b3e4e8f725e8012d1406, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cdb88fdb0cf46b244a667edaff21c7df, type: 3}
+      objectReference: {fileID: -997302443732783753, guid: 27deb773bafd7f34fa5e7c44d0fbae9a, type: 3}
     - target: {fileID: 8818513342629869904, guid: e42579f10244b3e4e8f725e8012d1406, type: 3}
       propertyPath: m_Color.b
       value: 0.49461553

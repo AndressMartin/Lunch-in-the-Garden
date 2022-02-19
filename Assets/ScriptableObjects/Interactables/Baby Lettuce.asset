@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62cb0d9e24d5e344d878780d1719e03c, type: 3}
-  m_Name: Strawberry
+  m_Name: Baby Lettuce
   m_EditorClassIdentifier: 
-  _name: Baby Kale
-  description: You can harvest kale young for tender pieces that can be used in salads.
-    Or grow it out for a hearty vegetable.
-  art: {fileID: -997302443732783753, guid: 27deb773bafd7f34fa5e7c44d0fbae9a, type: 3}
-  interactable: {fileID: 5649419509022736568, guid: 1de58b991962cae499f17e90dc423a57, type: 3}
+  _name: Baby Lettuce
+  description: You can harvest lettuce as it's young to get extra flavorful salads
+  art: {fileID: 2403288651036608766, guid: 27deb773bafd7f34fa5e7c44d0fbae9a, type: 3}
+  interactable: {fileID: 0}

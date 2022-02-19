@@ -5,13 +5,13 @@ using UnityEngine;
 [CreateAssetMenu]
 public class InteractableSO : VisualElementSO
 {
-    
 }
 
 public class VisualElementSO : ScriptableObject 
 {
-    public new string name;
+    public string _name;
     public string description;
     public Sprite art;
+
 }
 

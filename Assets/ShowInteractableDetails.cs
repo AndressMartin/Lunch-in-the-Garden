@@ -32,7 +32,7 @@ public class ShowInteractableDetails : MonoBehaviour
         if (showingObj)
         {
             Interactable interactable = obj.GetComponent<Interactable>();
-            title.text = interactable.content.name;
+            title.text = interactable.content._name;
             image.sprite = interactable.content.art;
             desciption.text = interactable.content.description;
         }

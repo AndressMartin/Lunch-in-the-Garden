@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62cb0d9e24d5e344d878780d1719e03c, type: 3}
-  m_Name: Cherry
+  m_Script: {fileID: 11500000, guid: f49f2b89f3abe6347b7778ee7f832e30, type: 3}
+  m_Name: Discovered
   m_EditorClassIdentifier: 
-  name: Cherry
-  description: I am the first interactable.
-  art: {fileID: 21300000, guid: c9acd8251ab297f4d9ef9b900690230c, type: 3}

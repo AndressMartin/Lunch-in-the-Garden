@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91ca246209901d94197e2b2c265778fe, type: 3}
-  m_Name: StrawberryCherryPie
+  m_Name: Baby Green Salad
   m_EditorClassIdentifier: 
-  name: Strawberry Cherry Pie
-  description: Simply great.
-  art: {fileID: 21300000, guid: fd098fb4cf57bad419701c802e442b7e, type: 3}
+  _name: Baby Green Salad
+  description: 'Simply great. '
+  art: {fileID: 21300000, guid: 5b8d4c56c32c74844974a594bab59f59, type: 3}
+  recipe: {fileID: 0}
   ingredients:
   - {fileID: 11400000, guid: 0334498ec951abd43b3b757675a82c73, type: 2}
   - {fileID: 11400000, guid: cde6a1a00a7706843be91b3f6b20fe77, type: 2}

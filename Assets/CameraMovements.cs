@@ -30,7 +30,7 @@ public class CameraMovements : MonoBehaviour
         ToggleCanClick();
         target = new Vector3(obj.transform.position.x, obj.transform.position.y - 1, obj.transform.position.z - 3);
         focusedObj = obj;
-        paningOnNewItem = obj.GetComponent<Interactable>().undiscovered;
+        paningOnNewItem = obj.GetComponent<Interactable>().Undiscovered;
 
         if (paningOnNewItem)
         {
@@ -63,6 +63,6 @@ public class CameraMovements : MonoBehaviour
 
     private void SetDiscovered()
     {
-        focusedObj.GetComponent<Interactable>().undiscovered = false;
+        focusedObj.GetComponent<Interactable>().Undiscovered = false;
     }
 }

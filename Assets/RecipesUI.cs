@@ -36,9 +36,9 @@ public class RecipesUI : MonoBehaviour
             {
                 var newIngredientUI = Instantiate(ingredientUIPanel, newRecipe.ingredientsGridLayout.transform);
                 ingredientsUI.Add(newIngredientUI);
-                newIngredientUI.Init(ingredient.art, ingredient.name);
+                newIngredientUI.Init(ingredient.art, ingredient._name);
             }
-            newRecipe.Init(recipe.art, recipe.name, ingredientsUI);
+            newRecipe.Init(recipe.art, recipe._name, ingredientsUI);
         }
     }
 
