@@ -938,6 +938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (Overlay)
       objectReference: {fileID: 0}
+    - target: {fileID: 4295121029166871181, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
+      propertyPath: m_Name
+      value: IngredientPanel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58d9f85cd24f255488eedddf1295e71b, type: 3}
 --- !u!1001 &5689244039346519308
