@@ -102,6 +102,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   showRecipe: 0
+  recipeFound: {fileID: 11400000, guid: 69960e6f1320d3d4796fec9a905e1afc, type: 2}
 --- !u!114 &7621202636681014709
 MonoBehaviour:
   m_ObjectHideFlags: 0

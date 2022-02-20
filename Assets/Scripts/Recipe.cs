@@ -7,6 +7,7 @@ public class Recipe : MonoBehaviour
     public RecipeSO content;
     public List<Interactable> ingredients = new List<Interactable>();
     public bool showRecipe;
+    public GameEvent recipeFound;
     public bool ShowRecipe
     {
         get{return showRecipe;}
@@ -36,5 +37,6 @@ public class Recipe : MonoBehaviour
 
         }
         ShowRecipe = true;
+        recipeFound.Raise(gameObject);
     }
 }

@@ -40,6 +40,7 @@ public class RecipesUI : MonoBehaviour
                 newIngredientUI.relatedInteractable = GameObject.Find(ingredient._name).GetComponent<Interactable>();
             }
             newRecipe.Init(recipe.art, recipe._name, ingredientsUI);
+            newRecipe.relatedRecipe = GameObject.Find(recipe._name).GetComponent<Recipe>();
         }
     }
 

@@ -129,9 +129,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 8698490271922575187}
   description: {fileID: 6232389144919328224}
+  grayOutImage: 0
   ingredientsGridLayout: {fileID: 0}
   ingredients: []
   relatedInteractable: {fileID: 0}
+  relatedRecipe: {fileID: 0}
+  colorPicker: {fileID: 11400000, guid: 6ed1930ea05356848ae362445944f637, type: 2}
 --- !u!222 &401657753154659097
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -161,7 +164,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8979586489739739151}
         m_TargetAssemblyTypeName: UIElement, Assembly-CSharp
-        m_MethodName: ActivateIngredientTextAndImage
+        m_MethodName: ActivateIngredientUI
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
