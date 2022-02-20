@@ -23,6 +23,12 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(LeaveSceneCoroutine());
     }
 
+    public void WinGame()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(1));
+    }
+
     private IEnumerator LeaveSceneCoroutine()
     {
         yield return new WaitForSeconds(3);

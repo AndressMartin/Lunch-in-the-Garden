@@ -171,6 +171,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1e20e4874d78a0e489f484b7515a36b7, type: 2}
   - {fileID: 11400000, guid: cccade39cb8826f4981a147c1ce66e81, type: 2}
   - {fileID: 11400000, guid: 71fd0d2764afd984ab5b3577d7df3f5e, type: 2}
+  recipeObjs:
+  - {fileID: 2009674779}
+  - {fileID: 1292311450}
+  - {fileID: 868347531}
+  WinGame: {fileID: 11400000, guid: 8e9d0ba7852f0ea4a8d49e5daecb0e72, type: 2}
 --- !u!114 &51583618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,13 +188,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07c1dca1a3b65e4c978ffb4c2268b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 0}
+  Event: {fileID: 11400000, guid: 69960e6f1320d3d4796fec9a905e1afc, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls: []
   ResponseWithObject:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 51583617}
+        m_TargetAssemblyTypeName: RecipesManager, Assembly-CSharp
+        m_MethodName: CheckAllRecipes
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &57562860 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 985665959207664300, guid: e42579f10244b3e4e8f725e8012d1406, type: 3}
@@ -584,6 +601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 594572878}
   - component: {fileID: 594572879}
+  - component: {fileID: 594572880}
   m_Layer: 0
   m_Name: '[Game]'
   m_TagString: Untagged
@@ -617,6 +635,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf39fb118a1eaf4aafeb72c2d520020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &594572880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594572877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07c1dca1a3b65e4c978ffb4c2268b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 8e9d0ba7852f0ea4a8d49e5daecb0e72, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 182154960}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: WinGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d695c831316e03e488cf2cac05129e42, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ResponseWithObject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &731312318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -921,6 +982,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particlesPrefab: {fileID: 6783334174776548012, guid: e841b29493ef97b4cb3d0b269a735fbf, type: 3}
+--- !u!114 &868347531 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7621202636681014698, guid: d49fd8fd0d5ac1d4cbbb3a787fdd3f09, type: 3}
+  m_PrefabInstance: {fileID: 906345624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ca00ed2f9780d4686ed4aae685edc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &892596664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1659,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7621202636681014696, guid: d49fd8fd0d5ac1d4cbbb3a787fdd3f09, type: 3}
   m_PrefabInstance: {fileID: 1244665953}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292311450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7621202636681014698, guid: d49fd8fd0d5ac1d4cbbb3a787fdd3f09, type: 3}
+  m_PrefabInstance: {fileID: 1244665953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ca00ed2f9780d4686ed4aae685edc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1350879629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7621202636681014696, guid: d49fd8fd0d5ac1d4cbbb3a787fdd3f09, type: 3}
@@ -1934,6 +2017,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5892434141453808343, guid: e42579f10244b3e4e8f725e8012d1406, type: 3}
   m_PrefabInstance: {fileID: 1975475393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2009674779 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7621202636681014698, guid: d49fd8fd0d5ac1d4cbbb3a787fdd3f09, type: 3}
+  m_PrefabInstance: {fileID: 7621202635330200613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ca00ed2f9780d4686ed4aae685edc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2031871740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,7 +2160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetedCamSize: 2
   paningOnNewItem: 0
-  tweenTime: 1.8
+  tweenTime: 1.5
   tweenTimeForNewItems: 3
   doneCameraTween: {fileID: 11400000, guid: a57adf6565720aa45a2a41e376fcc108, type: 2}
   canClick: {fileID: 11400000, guid: d695c831316e03e488cf2cac05129e42, type: 2}
