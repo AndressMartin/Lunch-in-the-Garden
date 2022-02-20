@@ -24,4 +24,18 @@ public class UIElement : MonoBehaviour
         this.image.sprite = image;
         this.description.text = description;
     }
+
+    private void Start()
+    {
+        image.enabled = false;
+    }
+
+    public void ActivateIngredientTextAndImage(GameObject obj)
+    {
+        if (obj == relatedInteractable.gameObject)
+        {
+            image.enabled = true;
+            description.color = new Color(68, 68, 68);
+        }
+    }
 }

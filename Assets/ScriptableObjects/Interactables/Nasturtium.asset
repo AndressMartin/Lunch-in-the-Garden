@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cb0d9e24d5e344d878780d1719e03c, type: 3}
+  m_Name: Nasturtium
+  m_EditorClassIdentifier: 
+  _name: Nasturtium
+  description: 'The leaves and flowers have a spicy taste and make a great garnish. '
+  art: {fileID: -8837704835255542079, guid: 53df0e4cad51a9f41b1b961baf7be72c, type: 3}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62cb0d9e24d5e344d878780d1719e03c, type: 3}
-  m_Name: Strawberry
+  m_Name: Baby Kale
   m_EditorClassIdentifier: 
   _name: Baby Kale
   description: You can harvest kale young for tender pieces that can be used in salads.

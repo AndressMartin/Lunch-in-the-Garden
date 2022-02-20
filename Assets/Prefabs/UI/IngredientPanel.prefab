@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 6526269085493268833}
   - component: {fileID: 8979586489739739151}
   - component: {fileID: 401657753154659097}
+  - component: {fileID: 8962244919461057651}
   m_Layer: 5
   m_Name: IngredientPanel
   m_TagString: Untagged
@@ -130,6 +131,7 @@ MonoBehaviour:
   description: {fileID: 6232389144919328224}
   ingredientsGridLayout: {fileID: 0}
   ingredients: []
+  relatedInteractable: {fileID: 0}
 --- !u!222 &401657753154659097
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -138,6 +140,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7550871747486259386}
   m_CullTransparentMesh: 1
+--- !u!114 &8962244919461057651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7550871747486259386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07c1dca1a3b65e4c978ffb4c2268b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d8e3f1889d5cdd645a4cde6643b31a3e, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []
+  ResponseWithObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8979586489739739151}
+        m_TargetAssemblyTypeName: UIElement, Assembly-CSharp
+        m_MethodName: ActivateIngredientTextAndImage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8321125538424694790
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,8 +245,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282664004
-  m_fontColor: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
+    rgba: 4288256409
+  m_fontColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

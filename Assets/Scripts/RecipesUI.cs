@@ -37,6 +37,7 @@ public class RecipesUI : MonoBehaviour
                 var newIngredientUI = Instantiate(ingredientUIPanel, newRecipe.ingredientsGridLayout.transform);
                 ingredientsUI.Add(newIngredientUI);
                 newIngredientUI.Init(ingredient.art, ingredient._name);
+                newIngredientUI.relatedInteractable = GameObject.Find(ingredient._name).GetComponent<Interactable>();
             }
             newRecipe.Init(recipe.art, recipe._name, ingredientsUI);
         }
