@@ -14,8 +14,8 @@ public class MenuManager : MonoBehaviour
     }
     public void LoadSceneAdditive()
     {
-        SceneManager.LoadScene(0, LoadSceneMode.Additive);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(1));
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(0));
     }
 
     public void LeaveSceneOnTimer()
@@ -26,12 +26,12 @@ public class MenuManager : MonoBehaviour
     public void WinGame()
     {
         SceneManager.LoadScene(2, LoadSceneMode.Additive);
-        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(1));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(0));
     }
 
     private IEnumerator LeaveSceneCoroutine()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.UnloadSceneAsync(0);
+        SceneManager.UnloadSceneAsync(1);
     }
 }
