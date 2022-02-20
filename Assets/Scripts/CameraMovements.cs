@@ -28,9 +28,14 @@ public class CameraMovements : MonoBehaviour
     public void SetZoomIn(GameObject obj)
     {
         ToggleCanClick();
-        target = new Vector3(obj.transform.position.x, obj.transform.position.y - 1, obj.transform.position.z - 3);
+        if(target.x < 0)
+            target = new Vector3(obj.transform.position.x+2f, obj.transform.position.y - .4f, obj.transform.position.z - 2f);
+        else if (target.x >= 0)
+            target = new Vector3(obj.transform.position.x, obj.transform.position.y - .4f, obj.transform.position.z - 2f);
         focusedObj = obj;
-        paningOnNewItem = obj.GetComponent<Interactable>().Undiscovered;
+        if (obj.GetComponent<Interactable>())
+            paningOnNewItem = obj.GetComponent<Interactable>().Undiscovered;
+        else paningOnNewItem = false;
 
         if (paningOnNewItem)
         {
@@ -63,6 +68,7 @@ public class CameraMovements : MonoBehaviour
 
     private void SetDiscovered()
     {
-        focusedObj.GetComponent<Interactable>().Undiscovered = false;
+        if (focusedObj.GetComponent<Interactable>())
+            focusedObj.GetComponent<Interactable>().Undiscovered = false;
     }
 }

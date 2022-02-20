@@ -7,7 +7,11 @@ public class ClickManager : Singleton<ClickManager>
     [SerializeField]
     private GameEvent ClickedInteractable;
     [SerializeField]
+    private GameEvent ClickedRecipe;
+    [SerializeField]
     private LayerMask layer;
+    [SerializeField]
+    private LayerMask recipeLayer;
     [SerializeField]
     private bool canClickInteractable;
 
@@ -18,6 +22,7 @@ public class ClickManager : Singleton<ClickManager>
     private void Update()
     {
         DoesCollideWithInteractable();
+        DoesCollideWithRecipe();
     }
 
     public bool Clicked()
@@ -41,6 +46,18 @@ public class ClickManager : Singleton<ClickManager>
         {
             Debug.Log("Clicked" + hit.collider.gameObject);
             ClickedInteractable.Raise(hit.collider.gameObject);
+        }
+    }
+    public void DoesCollideWithRecipe()
+    {
+        if (!Clicked()) return;
+        if (!canClickInteractable) return;
+
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100, recipeLayer);
+        if (hit.collider)
+        {
+            Debug.Log("Clicked" + hit.collider.gameObject);
+            ClickedRecipe.Raise(hit.collider.gameObject);
         }
     }
 

@@ -31,10 +31,21 @@ public class ShowInteractableDetails : MonoBehaviour
         ToggleShowingObj();
         if (showingObj)
         {
-            Interactable interactable = obj.GetComponent<Interactable>();
-            title.text = interactable.content._name;
-            image.sprite = interactable.content.art;
-            desciption.text = interactable.content.description;
+            if (obj.GetComponent<Interactable>())
+            {
+                Interactable interactable = obj.GetComponent<Interactable>();
+                title.text = interactable.content._name;
+                image.sprite = interactable.content.art;
+                desciption.text = interactable.content.description;
+            }
+            else if (obj.GetComponent<Recipe>())
+            {
+                Recipe recipe = obj.GetComponent<Recipe>();
+                title.text = recipe.content._name;
+                image.sprite = recipe.content.art;
+                desciption.text = recipe.content.description;
+            }
+            
         }
     }
 
