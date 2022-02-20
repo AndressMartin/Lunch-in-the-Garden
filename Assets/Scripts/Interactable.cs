@@ -16,6 +16,10 @@ public class Interactable : MonoBehaviour
             discovered.Raise(gameObject);
         }
     }
+    private void Awake()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+    }
     private void OnValidate()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = content.art;
